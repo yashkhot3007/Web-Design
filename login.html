@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    .signin{
+        display: flex;
+        align-items: center;
+        background-position: center;
+        background-image: url(./images/heading.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+        font-size: xx-large;
+        height: 100%;
+        margin: 0;
+        justify-content: left;
+        min-height: 100vh;
+      }
+    </style>
+
+    <title>Riding World | Sign-in</title>
+</head>
+<script>function 
+validate(input){
+    //var mail = document.getElementById("text1").value;
+    var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+    if(input.value.match(regx)){
+        return true; 
+    }
+
+    else{
+        alert("Please provide valid email and password")
+        document.form1.text1.focus();
+        return false;
+    }
+}
+</script>
+<!-- Name - Yash Shashank Khot 60 ET1 -->
+<body class="signin">
+    
+    <div class="wrapper">
+        
+    <form action="homepage.html" id="login" name="form1" onsubmit="return(validate(document.form1.text1));">
+        <label for="">LOGIN</label>
+        <h3>Email <input type="text" name="email" placeholder="Enter your email" id="text1"></h3>
+        <h3>Password <input type="text" name="email" placeholder="Enter your Password" name="Password" ></h3>
+        <button id="Submit">Submit</button>
+    </form>
+    <button onclick="window.location.href='homepage.html';" >Back Home</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Riding World</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align:left;
+  background: url('./images/heading.jpg');
+  color: rgb(255, 255, 255);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 100px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(170, 0, 0);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Image1 */
+.img1 {
+  background: url('./images/image1.jpg');
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Image2 */
+.img2 {
+  background: url('./images/image2.jpg');
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Image3 */
+.img3 {
+  background: url('./images/image3.jpg');
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Image4 */
+.img4 {
+  background: url('./images/image4.jpg');
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size:cover;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Image5 */
+.img5 {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Image6 */
+.img6 {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Riding World</h1>
+  <h4>One place for all your motorcycle accessories</h4>
+  <h4>By Yash Shashank Khot</h4>
+</div>
+
+<div class="navbar">
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="#">About us</a>
+  <a href="login.html" class="right">Sign up / Login</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>TOURING MOTORCYCLE ACCESSORIES</h2>
+    <hp>For those enamoured with long motorcycle journeys, RIDING WORLD offers an extensive range of motorcycle touring accessories, including top cases, side cases, windscreens and bumpers, as well as helmets and personal accessories.</p>
+    <div class="img1" style="height:280px;"></div>
+    <h3>SOFT PANNIER BAGS FOR MOTORCYCLE</h3>
+    <div class="img2" style="height:250px;"></div>
+    <h3>HARD PANNIER BAGS FOR MOTORCYCLE</h3>
+  </div>
+  <div class="main">
+    <h1>YOU DON'T NEED A THERAPIST IF YOU OWN A MOTORCYCLE</h1>
+    <h2>TOURING SAFETY ACCESSORIES</h2>
+    <div class="img3" style="height:260px;"></div>
+    <h3>HELMETS FOR MOTORCYCLES AND SCOOTERS</h3>
+    <div class="img4" style="height:300px;"></div><br>
+    <h3>RIDING GLOVES</h3>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Contact Us</h2>
+  <p>ridingworld@gmail.com | 90881045657/9986175452 | www.ridingworld.com</p>
+</div>
+
+</body>
+</html>
